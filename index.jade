@@ -7,11 +7,13 @@ html
         script(language='javascript', type='text/javascript', src='jquery.min.js')
         script(language='javascript', type='text/javascript', src='nav.js')
     body
-        include 'nav.jade'
+        include ./includes/nav.html
         .hero
             .hero-inner
-                a(href='https://www.google.com').hero-logo
+                a(href='#').hero-logo
                     img(src='https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_1.png' alt='Logo Image')
                 .hero-copy
                     h1 Short description of Product
                     p A few reasons why this product is worth using, who it's for and why they need it.
+
+        include ./includes/footer.html
