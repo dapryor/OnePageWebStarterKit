@@ -4,16 +4,14 @@ html
         title="Web App"
         meta(name='viewport', content='width=device-width, initial-scale=1.0')
         link(href='css/app.css', rel='stylesheet')
-
+        script(language='javascript', type='text/javascript', src='jquery.min.js')
+        script(language='javascript', type='text/javascript', src='nav.js')
     body
-        header
-            .container
-                .logo
-
-                nav
-                    a(href="#") About
-                    a(href="#") Donate
-                    a(href="#") Contact
-                h1
-                    span Web Starter
-                p.kicker Template
+        include 'nav.jade'
+        .hero
+            .hero-inner
+                a(href='https://www.google.com').hero-logo
+                    img(src='https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_1.png' alt='Logo Image')
+                .hero-copy
+                    h1 Short description of Product
+                    p A few reasons why this product is worth using, who it's for and why they need it.
